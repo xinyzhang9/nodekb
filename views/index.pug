@@ -1,6 +1,6 @@
-doctype html
-html
-  head
-    title #{title}
-  body
-    h1 articles
+extends layout
+
+block content
+  h1 #{title}
+  each article, i in articles
+    li=article.title
